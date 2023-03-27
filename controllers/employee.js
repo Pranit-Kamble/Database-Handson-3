@@ -15,7 +15,7 @@ const employeeEnrollment = async(req,res)=>{
 
 const getAllData = async(req,res)=>{
     try{
-        const result = await Information.find({firstName:'Jhon'}).to
+        const result = await Information.find()
         res.send(result)
         
     }catch(err){
